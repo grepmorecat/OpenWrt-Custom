@@ -23,19 +23,19 @@ mod_default_config(){
     #=========================================
 
     # C1
-    echo '修改后台地址为 192.168.199.1'
-    sed -i 's/192.168.1.1/192.168.199.1/g' package/base-files/files/bin/config_generate
+    # echo '修改后台地址为 192.168.199.1'
+    # sed -i 's/192.168.1.1/192.168.199.1/g' package/base-files/files/bin/config_generate
 
-    echo '修改时区为东八区'
-    sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
+    # echo '修改时区为东八区'
+    # sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
 
-    echo '修改主机名为 JDC_Mark1'
-    sed -i 's/OpenWrt/JDC_Mark1/g' package/base-files/files/bin/config_generate
+    # echo '修改主机名为 JDC_Mark1'
+    # sed -i 's/OpenWrt/JDC_Mark1/g' package/base-files/files/bin/config_generate
 
     # C2
-    echo '修改默认主题为老竭力的 argon'
+    # echo '修改默认主题为老竭力的 argon'
     # sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' feeds/luci/collections/luci*/Makefile
-    sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
+    # sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
 
     # C3
     echo '添加 OpenWrt 默认设置文件'
