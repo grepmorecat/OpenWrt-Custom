@@ -22,7 +22,7 @@ on:
       config_tag:
         description: '选择配置的版本(clean|basic|func|test)'
         required: false
-        default: 'func'
+        default: 'clean'
       use_cache:
         description: '尝试使用缓存的tool和toolchain'
         required: false
