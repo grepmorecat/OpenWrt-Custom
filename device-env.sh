@@ -48,7 +48,13 @@ case $1 in
         SEQ_FILE="testSeq/openwrt.ini"
         ;;
     6)
-        # undefined
+        DEVICE_TAG="OpenWrt stable RE-SP-01B"
+        REPO_USE=openwrt/openwrt
+        REPO_BRANCH=openwrt-21.02
+        COMMIT_SHA=latest
+        DIY_P2_SH="diy-part2/[OpenWrt]RE-SP-01B-part2.sh"
+        DEPENDS=$(curl -fsSL "https://gist.githubusercontent.com/1-1-2/38e424cd9da729f72fa4a495d23271ea/raw/openwrt")
+        SEQ_FILE="testSeq/openwrt.ini"
         ;;
     7)
         # undefined
