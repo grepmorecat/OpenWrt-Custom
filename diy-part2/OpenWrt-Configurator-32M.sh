@@ -134,6 +134,11 @@ EOF
 # CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-full=y
 EOF
+# add kmod-tun
+    cat >> .config << EOF
+CONFIG_PACKAGE_kmod-tun=y
+EOF
+
 }
 
 config_basic() {
