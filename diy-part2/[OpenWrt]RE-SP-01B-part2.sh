@@ -75,6 +75,8 @@ target_inf() {
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_jdcloud_re-sp-01b=y
+CONFIG_KERNEL_MIPS_FP_SUPPORT=y
+CONFIG_PACKAGE_luci-app-ttyd=y
 EOF
 }
 
